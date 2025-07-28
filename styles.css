@@ -1,1 +1,74 @@
 /*  your css code here. If applicable */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.title {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.form label {
+  display: block;
+  margin: 10px;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+#submit {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+.game {
+  margin-top: 20px;
+}
+
+.message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+  margin: auto;
+}
+
+.cell {
+  background-color: pink;
+  border: 1px solid black;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.winner {
+  background-color: purple !important;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
